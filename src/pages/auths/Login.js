@@ -99,7 +99,12 @@ const Login = () => {
           <div className='h-7 w-7 border-2 border-t-blue-gray-900 rounded-full animate-spin mx-auto'></div>
         </Button> : <Button type='submit' className='mt-6' fullWidth>Submit</Button>}
 
-
+        <Typography color="gray" className="mt-4 text-center">
+          Forgot your password? {" "}
+          <button type='button' onClick={() => nav('/user/reset')}>
+            <h1 className='font-medium text-red-600 transition-colors hover:text-red-700'>Reset</h1>
+          </button>
+        </Typography>
         <Typography color="gray" className="mt-4 text-center font-normal">
           Don't have an account?{"  "}
           <button type='button' onClick={() => nav('/user/signup')}>

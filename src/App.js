@@ -19,6 +19,7 @@ import OrderPage from './pages/auths/OrderPage';
 import UserProfile from './pages/UserPage/UserProfile';
 import OrderDetail from './pages/UserPage/OrderDetail';
 import AdminProfile from './pages/AdminPage/AdminProfile';
+import Reset from './pages/auths/Reset';
 
 const App = () => {
 
@@ -32,6 +33,7 @@ const App = () => {
           <Route element={<AuthRoutes />}>
             <Route path='user/login' element={<Login />} />
             <Route path='user/signup' element={<SignUp />} />
+            <Route path='user/reset' element={<Reset />} />
           </Route>
           <Route element={<UserRoutes />}>
             <Route path='user/profile' element={<UserProfile />} />
